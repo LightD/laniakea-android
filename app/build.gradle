@@ -25,10 +25,16 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.google.code.gson:gson:2.8.0'
 
     compile "android.arch.lifecycle:runtime:1.0.0-alpha1"
     compile "android.arch.lifecycle:extensions:1.0.0-alpha1"
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
+
+    compile 'com.mindvalley.android:hexagonrecyclerview:1.0.1'
 
     testCompile 'junit:junit:4.12'
 }
