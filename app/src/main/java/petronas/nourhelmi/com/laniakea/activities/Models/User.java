@@ -2,6 +2,8 @@ package petronas.nourhelmi.com.laniakea.activities.Models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 /**
  * Created by nourhelmi on 25/06/2017.
  */
@@ -25,6 +27,10 @@ public class User {
     private String gender;
     @SerializedName("profile_image_url")
     private String profilePicture;
+    @SerializedName("comments")
+    private List<Comment> comments;
+    @SerializedName("posts")
+    private List<Idea> ideas;
 
     public int getId() {
         return id;
@@ -96,5 +102,21 @@ public class User {
 
     public void setProfilePicture(String profilePicture) {
         this.profilePicture = profilePicture;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public List<Idea> getIdeas() {
+        return ideas;
+    }
+
+    public void setIdeas(List<Idea> ideas) {
+        this.ideas = ideas;
     }
 }

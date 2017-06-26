@@ -5,6 +5,7 @@ package petronas.nourhelmi.com.laniakea.activities.API;
  */
 
 public class ServerError {
+
     private String error = "Something went wrong. Please try again later!";
 
 

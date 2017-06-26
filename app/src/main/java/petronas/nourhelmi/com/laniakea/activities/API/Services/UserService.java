@@ -33,6 +33,9 @@ public interface UserService {
     @GET("users/{id}.json")
     Call<User> get(@Path("id") int id);
 
+    @GET("users/me.json")
+    Call<User> me();
+
     @PUT("users.json")
     Call<User> update(@Body UpdateUserParams params);
 

@@ -12,9 +12,14 @@ import java.util.Map;
 public class UpdateUserParams {
 
     @SerializedName("user")
-    Map<String, String> map;
+    private Map<String, String> map;
 
-    public UpdateUserParams(Map<String, String> userFieldParams) {
+    public UpdateUserParams(String fullname, String phoneNum, String department, String jobTitle) {
+        Map<String, String> userFieldParams = new HashMap();
+        if (fullname != null) { userFieldParams.put("full_name", fullname); }
+        if (phoneNum != null) { userFieldParams.put("phone_number", phoneNum); }
+        if (department != null) { userFieldParams.put("department", department); }
+        if (jobTitle != null) { userFieldParams.put("job_title", jobTitle); }
         this.map = userFieldParams;
     }
 }
